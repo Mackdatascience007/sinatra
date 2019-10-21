@@ -12,3 +12,17 @@ Lancez le fichier en tapant dans le terminal cette commande : shotgun -p 4567
 Ensuite amusez vous à entrer des potins ...
 
 A+
+
+the_gossip_project_sinatra
+├── Gemfile
+├── Gemfile.lock
+├── config.ru
+├── db
+│   └── gossip.csv
+└── lib
+    ├── controller.rb
+    ├── gossip.rb
+    └── views
+        ├── index.erb
+        └── new_gossip.erb
+	└── show.erb
