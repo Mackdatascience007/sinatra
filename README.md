@@ -9,7 +9,31 @@ Le projet du jour reprend notre fameuse application The GOSSIP Projet, ici nos p
 
 Lancez le fichier en tapant dans le terminal cette commande : shotgun -p 4567
 
-Ensuite amusez vous à entrer des potins ...
+Fonctionnalités présentes :
+1. lancer un serveur rack
+2. afficher une page d'accueil montrant la liste des potins
+3. afficher une page de saisie des potins
+4. enregistrer un potin
+
+Configuration requise
+
+Version de Ruby :
+$ ruby -v
+ruby 2.5.1
+
+Version de Bundler :
+$ bundle -v
+Bundler version 2.0.2
+
+Gemmes utilisées (source : Gemfile) :
+pry et rubocop sont commentées car inutiles pour exécuter le programme.
+# gem 'pry'
+gem 'rspec'
+# gem 'rubocop'
+gem 'sinatra'
+gem 'shotgun'
+
+
 
 A+
 

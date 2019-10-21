@@ -3,13 +3,20 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-    <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <% gossips.each do |gossip| %>
-      <p>
-        <%= gossip.author %><br/>
-        <%= gossip.content %>
-      </p>
-    <% end %>
-    <a href= "/gossips/new/">Creer un potin</a>
+  <center>
+   <h2>Voici la liste des potins :</h2>
+    <% gossips.each_with_index do |gossip, gossip_index| %>
+        <h3>Potin n°<%= (gossip_index + 1).to_s %></h3>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+        <p>Détails du potin <a href=<%= '/gossips/' + (gossip_index + 1).to_s+'/' %>>Cliquez ici</a>.</p>
+      <% end %>
+    <p><a href= "/gossips/new/">Créer un nouveau potin, délicieux, juteux ...</a><p>
+    <img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts113/v4/dc/27/a1/dc27a1eb-2307-fe47-342e-6fb84618f5a8/mza_8792713575073991728.jpg/600x600bb.jpg" alt="GOSSIP"/>
+
+    
+    
   </body>
-</html>
+</html> 
